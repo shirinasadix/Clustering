@@ -2,7 +2,7 @@
 """
 Created on Tue Apr 29 16:29:47 2025
 
-@author: Windows
+@author: Shirin Asadi   Jin Li
 """
 
 import os
@@ -102,3 +102,4 @@ for ag_count in range(2, max_ag_atoms + 1):
     print(f"Generated {len(structures_with_path)} structures for {ag_count}Ag.")
 
 print("All structures generated.")
+
