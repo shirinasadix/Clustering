@@ -1,2 +1,3 @@
-# Clustering
-Exhaustive enumeration approach for generation of Ag cluster configurations
+# Recursive Agₙ Structure Generator 
+
+This script performs automatic recursive enumeration of Ag cluster structures on a surface starting from a single-Ag POSCAR. Using the Fibonacci sphere sampling algorithm, it systematically places additional Ag atoms at a fixed bond distance around every existing Ag atom, generating candidate Ag₂–Agₙ configurations. For each new placement, a geometric validation step ensures the added atom satisfies a minimum distance criterion to avoid unphysical overlaps with any atom in the system. Valid structures are written in VASP POSCAR format and organized hierarchically into folders (1Ag/, 2Ag/, …, nAgₙ/), where each generation is built from all valid structures of the previous one. This recursive expansion strategy enables systematic and unbiased sampling of cluster growth configurations while maintaining user-defined geometric constraints, making it suitable for high-throughput DFT prescreening of supported Agₙ clusters.
